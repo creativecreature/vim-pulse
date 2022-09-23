@@ -1,5 +1,6 @@
 ## Overview
-This plugin is part of a bigger project where I've started to extract
-metadata from my coding sessions.
+Harvesting metadata from your coding sessions.
 
-It maps autocommands to remote procedure calls.
+This plugin maps autocommands to remote procedure calls. The server and client resides in
+[this](https://github.com/creativecreature/code-harvest) repository. You need to build the
+binaries and make sure that they are in your $PATH.
