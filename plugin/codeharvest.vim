@@ -31,4 +31,4 @@ autocmd BufEnter * :call call("OpenFile", [g:code_harvest_session_id, expand('%:
 autocmd BufWrite * :call call("SendHeartbeat", [g:code_harvest_session_id, expand('%:p')])
 
 " When we exit VIM we inform the server that our coding session has ended.
-autocmd VimLeave * :call call("EndSession", [g:code_harvest_session_id])
+autocmd VimLeave * :call call("EndSession", [g:code_harvest_session_id, expand('%:p')])
